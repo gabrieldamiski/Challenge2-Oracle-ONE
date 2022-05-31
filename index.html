@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Forca</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="https://www.alura.com.br/" target="_blank"><img src="./img/aluraLogo.svg" alt="logo da alura"></a>
+        </div>
+    </header>
+
+    <div id="pagInicial">
+        <div class="container">
+            <div class="pagInicial">
+                <button id="btnComecarJogo" class="btnBlue">Começar a jogar</button>
+                <button id="btnAddPalavra" class="btnWhite">Adicionar nova palavra</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="pagAddPalavra" style="display: none;">
+        <textarea name="palavraDigitada" id="palavraDigitada" placeholder="Digite uma palavra ou frase" maxlength="8"></textarea>
+            <div>
+                <div class="info">
+                    <span><img src="./img/Vector.svg"></span><span>Máx. de 8 letras</span>
+                    <span><img src="./img/Vector.svg"></span><span>Sem acentuação</span>
+                </div>
+                <div class="addPalavra-btns">
+                    <button id="salvarComecar" class="btnBlue">Salvar e começar</button>
+                    <button id="cancelar" class="btnWhite cancelar">Cancelar</button>
+                </div>
+            </div>
+    </div>
+
+    <div id="pagJogo" style="display: none;">
+        <div>
+            <canvas width="380" height="405" id="desenho"></canvas>
+        </div>
+        <div id="palavraSecreta">
+        </div>
+        <div id="resultado"></div>
+        <div id="teclado">
+                <div>
+                    <button id="tecla-Q" class="key" onclick="verificaLetra('Q')">Q</button>
+                    <button id="tecla-W" class="key" onclick="verificaLetra('W')">W</button>
+                    <button id="tecla-E" class="key" onclick="verificaLetra('E')">E</button>
+                    <button id="tecla-R" class="key" onclick="verificaLetra('R')">R</button>
+                    <button id="tecla-T" class="key" onclick="verificaLetra('T')">T</button>
+                    <button id="tecla-Y" class="key" onclick="verificaLetra('Y')">Y</button>
+                    <button id="tecla-U" class="key" onclick="verificaLetra('U')">U</button>
+                    <button id="tecla-I" class="key" onclick="verificaLetra('I')">I</button>
+                    <button id="tecla-O" class="key" onclick="verificaLetra('O')">O</button>
+                    <button id="tecla-P" class="key" onclick="verificaLetra('P')">P</button>
+                </div>
+                <div>
+                    <button id="tecla-A" class="key" onclick="verificaLetra('A')">A</button>
+                    <button id="tecla-S" class="key" onclick="verificaLetra('S')">S</button>
+                    <button id="tecla-D" class="key" onclick="verificaLetra('D')">D</button>
+                    <button id="tecla-F" class="key" onclick="verificaLetra('F')">F</button>
+                    <button id="tecla-G" class="key" onclick="verificaLetra('G')">G</button>
+                    <button id="tecla-H" class="key" onclick="verificaLetra('H')">H</button>
+                    <button id="tecla-J" class="key" onclick="verificaLetra('J')">J</button>
+                    <button id="tecla-K" class="key" onclick="verificaLetra('K')">K</button>
+                    <button id="tecla-L" class="key" onclick="verificaLetra('L')">L</button>
+                </div>
+                <div>
+                    <button id="tecla-Z" class="key" onclick="verificaLetra('Z')">Z</button>
+                    <button id="tecla-X" class="key" onclick="verificaLetra('X')">X</button>
+                    <button id="tecla-C" class="key" onclick="verificaLetra('C')">C</button>
+                    <button id="tecla-V" class="key" onclick="verificaLetra('V')">V</button>
+                    <button id="tecla-B" class="key" onclick="verificaLetra('B')">B</button>
+                    <button id="tecla-N" class="key" onclick="verificaLetra('N')">N</button>
+                    <button id="tecla-M" class="key" onclick="verificaLetra('M')">M</button>
+                </div>
+        </div>
+        <div class="pagJogoBtn">
+            <button id="novoJogo" class="btnBlue">Novo Jogo</button>
+            <button class="btnWhite cancelar">Desistir</button>
+        </div>
+    </div>
+
+
+    <script src="./js/jogo.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>

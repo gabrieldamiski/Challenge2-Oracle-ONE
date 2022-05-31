@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #F3F5FC;
+}
+header {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+}
+.btnBlue, .btnWhite {
+    background: #0A3871;
+    padding: 1.5rem 6rem;
+    border-radius: 20px;
+    cursor: pointer;
+    border: 1px solid #0A3871;
+    color: #fff;
+}
+.btnWhite {
+    color: #0A3871;
+    background: transparent;
+}
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* página inicial */
+.pagInicial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+.pagInicial button {
+    width: 350px;
+}
+
+/* página adição de palavra */
+#pagAddPalavra {
+    margin: 0 auto;
+    width: 45%;
+    height: 100vh;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 12rem;
+}
+#pagAddPalavra textarea {
+    resize: none;
+    background: transparent;
+    color: #0A3871;
+    width: 100%;
+    height: 200px;
+    font-size: 2rem;
+    outline: none;
+    border: none;
+}
+#pagAddPalavra textarea::placeholder {
+    color: #0A3871;
+}
+.info {
+    display: flex;
+    align-content: center;
+    gap: 8px;
+    font-size: 14px;
+    color: #495057;
+    margin-bottom: .5rem;
+}
+.addPalavra-btns {
+    display: flex;
+    gap: 20px;
+}
+.addPalavra-btns button {
+    width: 100%;
+    padding: 1.5rem 4rem;
+}
+
+/* página do jogo */
+#pagJogo {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#palavraSecreta {
+    display: flex;
+    justify-content: center;
+}
+.letras {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 40px;
+    margin: 10px 10px 0 10px;
+    border-bottom: 3px solid #0A3871;
+    font-size: 1.5rem;
+}
+#resultado {
+    display: flex;
+    height: 3rem;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+/*teclado*/
+#teclado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 2rem;
+}
+#teclado button{
+    font-size: 1rem;
+    background-color: transparent;
+    padding: 10px;
+    width: 60px;
+    border-radius: 4px;
+    border: 1px solid #6388b6;
+}
+#teclado button:hover {
+    cursor: pointer;
+    background-color: #c2d3e9;
+}
+
+@media (max-width: 768px) {
+    #teclado button{
+        font-size: 1rem;
+        padding: 10px;
+        width: 40px;
+    }
+}
+
+@media (max-width: 600px) {
+    #pagJogo .btnBlue,.btnWhite {
+        padding: 1.2rem 3.5rem;  
+    }
+    .letras {
+        height: 60px;
+        width: 32px;
+        margin: 10px 4px 0 4px;
+        border-bottom: 3px solid #0A3871;
+        font-size: 1.5rem;
+    }
+    #teclado button{
+        font-size: 1rem;
+        padding: 10px;
+        width: 32px;
+    }
+}
+
