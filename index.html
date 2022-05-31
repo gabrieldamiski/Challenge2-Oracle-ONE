@@ -24,11 +24,15 @@
     </div>
 
     <div id="pagAddPalavra" style="display: none;">
-        <textarea name="palavraDigitada" id="palavraDigitada" placeholder="Digite uma palavra ou frase" maxlength="8"></textarea>
+        <textarea name="palavraDigitada" id="palavraDigitada" placeholder="Digite uma palavra" maxlength="8"></textarea>
             <div>
                 <div class="info">
-                    <span><img src="./img/Vector.svg"></span><span>Máx. de 8 letras</span>
-                    <span><img src="./img/Vector.svg"></span><span>Sem acentuação</span>
+                    <div class="info1">
+                        <span><img src="./img/Vector.svg"></span><span>Máx. de 8 letras</span>
+                    </div>
+                    <div class="info2">
+                        <span><img src="./img/Vector.svg"></span><span>Sem acentuação</span>
+                    </div>
                 </div>
                 <div class="addPalavra-btns">
                     <button id="salvarComecar" class="btnBlue">Salvar e começar</button>
@@ -38,7 +42,7 @@
     </div>
 
     <div id="pagJogo" style="display: none;">
-        <div>
+        <div class="divCanvas">
             <canvas width="380" height="405" id="desenho"></canvas>
         </div>
         <div id="palavraSecreta">
@@ -83,6 +87,9 @@
             <button class="btnWhite cancelar">Desistir</button>
         </div>
     </div>
+    <footer>
+        <p>Desenvolvido por <span>Gabriel Damiski</span></p>
+    </footer>
 
 
     <script src="./js/jogo.js"></script>
