@@ -224,5 +224,8 @@ footer img {width: 1.3rem;}
     canvas {
         width: 260px;
     }
+    #pagAddPalavra textarea {
+        height: 90px;
+    }
 }
 
