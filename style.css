@@ -25,7 +25,7 @@ header {
     background: transparent;
 }
 .container {
-    height: 100vh;
+    height: 95vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -92,6 +92,7 @@ header {
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 2rem;
 }
 .divCanvas {
     width: 100%;
@@ -141,12 +142,29 @@ header {
     cursor: pointer;
     background-color: #c2d3e9;
 }
-footer{margin: 3rem 0 1rem 0;}
-footer p {font-size: 12px; text-align: center;}
-footer span {
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4vh;
+    gap: 1rem;
+    color: #495057;
     font-size: 14px;
-    color: #0A3871;
 }
+
+footer div {
+    display: flex;
+    gap: 1rem;
+    align-items: center
+}
+
+footer div::before{content: '|';}
+
+footer span {
+    color: #072B61;
+    font-weight: bold;
+}
+footer img {width: 1.3rem;}
 
 @media (max-width: 768px) {
     #teclado button{
@@ -157,6 +175,9 @@ footer span {
 }
 
 @media (max-width: 600px) {
+    .container {
+        height: 85vh;
+    }
     .pagInicial button {
         width: 280px;
         padding-right: 0;
