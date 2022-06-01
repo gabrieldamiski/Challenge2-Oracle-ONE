@@ -46,11 +46,11 @@ header {
 #pagAddPalavra {
     margin: 0 auto;
     width: 45%;
-    height: 100vh;
+    height: 90vh;
     justify-content: center;
     display: flex;
     flex-direction: column;
-    gap: 12rem;
+    gap: 3rem;
 }
 #pagAddPalavra textarea {
     resize: none;
@@ -84,7 +84,7 @@ header {
 }
 .addPalavra-btns button {
     width: 100%;
-    padding: 1.5rem 4rem;
+    padding: 1.5rem 0;
 }
 
 /* página do jogo */
@@ -190,13 +190,7 @@ footer img {width: 1.3rem;}
     }
     
     #pagAddPalavra {
-        margin: 0 auto;
         width: 70%;
-        height: 100vh;
-        justify-content: center;
-        display: flex;
-        flex-direction: column;
-        gap: 10rem;
     }
     .addPalavra-btns button {
         padding: 1.5rem 2rem;
